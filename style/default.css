@@ -16,7 +16,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #110303;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 img {
@@ -54,13 +54,9 @@ p {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1100px;
     padding: 0 15px;
     margin: 0 auto;
-}
-
-.main {
-    background-color: #fff;
 }
 
 section {
@@ -70,5 +66,33 @@ section {
 @media (min-width: 768px) {
     .container {
         padding: 0 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page__header {
+        width: 290px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .page {
+        background-image: linear-gradient(to right, #a1b7c8 20%, transparent 20%);
+    }
+
+    .page__header {
+        width: 355px;
+        left: calc(50% - 775px);
+
+    }
+}
+
+@media (min-width: 2550px) {
+    .page {
+        background-image: linear-gradient(to right, #a1b7c8 30%, transparent 30%);
     }
 }
