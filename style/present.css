@@ -40,6 +40,12 @@
     border-radius: 4px;
 }
 
+.present__order-btn:hover {
+
+    box-shadow: 9px 10px 40px 13px #ff9f6b;
+}
+
+
 @media (min-width: 480px) {
     .present__container {
         display: flex;
