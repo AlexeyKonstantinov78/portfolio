@@ -1,8 +1,7 @@
-.present {}
-
 .present__photo {
-    width: 290px;
-    height: 437px;
+    width: 100%;
+    object-fit: cover;
+    height: 430px;
     margin-bottom: 20px;
 }
 
@@ -28,7 +27,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 .present__order-btn {

@@ -133,7 +133,7 @@
 
     .header__contacts {
         position: static;
-        display: unset;
+        display: block;
     }
 
     .contacts__list {
