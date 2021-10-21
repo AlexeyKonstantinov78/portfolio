@@ -1,7 +1,6 @@
 .present__photo {
     width: 100%;
     object-fit: cover;
-    height: 430px;
     margin-bottom: 20px;
 }
 
@@ -39,4 +38,120 @@
     padding: 16px 60px;
     background-color: #E87C40;
     border-radius: 4px;
+}
+
+@media (min-width: 480px) {
+    .present__container {
+        display: flex;
+    }
+
+    .present__photo {
+        width: 50%;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .present__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .present__title {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 750px) {
+    .present__title {
+        font-size: 33px;
+    }
+
+    .present__subtitle {
+        font-size: 18px
+    }
+
+    .present__description {
+        font-size: 16px
+    }
+
+    .present__order-btn {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .present {
+        padding-top: 70px;
+    }
+
+    .present__photo {
+        width: 370px;
+        margin-right: 27px;
+    }
+
+    .present__group-title {
+        margin-bottom: 38px;
+    }
+
+    .present__title {
+        margin-bottom: 24px;
+    }
+
+    .present__description {
+        margin-bottom: 60px;
+    }
+
+    .present__order-btn {
+        padding: 24px 82px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .present {
+        position: relative;
+    }
+
+    .present:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 40%;
+        height: 100%;
+        background-color: #A1B7C8;
+        z-index: -1;
+    }
+
+    .present__photo {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .present__photo {
+        width: 445px;
+    }
+
+    .present__group-title {
+        margin-bottom: 60px;
+    }
+
+    .present__title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .present__subtitle {
+        font-size: 20px;
+    }
+
+    .present__description {
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+
 }
