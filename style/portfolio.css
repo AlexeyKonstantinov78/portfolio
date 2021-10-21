@@ -1,0 +1,42 @@
+.portfolio__slider {
+    padding: 0 19px;
+}
+
+.portfolio__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.card__bg-mockup {
+    position: relative;
+    width: 155px;
+    height: 92px;
+    margin: 0 auto;
+    background-image: url("../img/macbook.svg");
+    background-size: 155px 92px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.card__picture {
+    position: absolute;
+    width: 116px;
+    top: 2px;
+    left: 20px;
+}
+
+.card__data {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.card__title {
+    text-align: center;
+}
