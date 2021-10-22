@@ -158,16 +158,16 @@
     <div class="page__overlay page__overlay_modal">
         <div class="modal">
             <h2 class="modal-title">Заполните форму и я свяжусь с вами</h2> 
-            <form class="modal__form callback">
+            <form class="modal__form callback" method="post" action="http://httpbin.org/post" target="_blank">
                 <fieldset class="callback__group">
                     <legend class="visually-hidden">Личные данные</legend>
                     <label class="callback__label">
                         <span class="callback__label-text">ФИО</span>
-                        <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+                        <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО" required pattern="[A-Za-zА-Яа-яЁё\s]+" title="Только буквы">
                     </label>
                     <label class="callback__label">
                         <span class="callback__label-text">Телефон</span>
-                        <input class="callback__input" type="text" name="phone" placeholder="Введите ваше номер телефона">
+                        <input class="callback__input" type="text" name="phone" placeholder="Введите ваше номер телефона" required pattern="[0-9()#&+*-=.]+" title="Допускаются только цифры и символы телефона ( # , -, * и т. д.).">
                     </label>
                 </fieldset>
                 

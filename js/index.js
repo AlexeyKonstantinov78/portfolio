@@ -2,7 +2,8 @@ const headerContactsBurger = document.querySelector('.header__contacts-burger'),
     headerContacts = document.querySelector('.header__contacts'),
     presentOrderBtn = document.querySelector('.present__order-btn'),
     modalCloss = document.querySelector('.modal__closs'),
-    pageOverlayModal = document.querySelector('.page__overlay_modal');
+    callbackBtn = document.querySelector('.callback__btn');
+pageOverlayModal = document.querySelector('.page__overlay_modal');
 
 
 new Swiper('.swiper', {
@@ -42,3 +43,7 @@ presentOrderBtn.addEventListener('click', () => {
 modalCloss.addEventListener('click', () => {
     pageOverlayModal.classList.toggle('display__flex');
 });
+
+// callbackBtn.addEventListener('click', () => {
+//     pageOverlayModal.classList.toggle('display__flex');
+// });
