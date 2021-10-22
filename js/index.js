@@ -1,3 +1,7 @@
+const headerContactsBurger = document.querySelector('.header__contacts-burger'),
+    headerContacts = document.querySelector('.header__contacts');
+
+
 new Swiper('.swiper', {
     // loop: true,
     navigation: {
@@ -20,4 +24,9 @@ new Swiper('.swiper', {
             }
         }
     }
+});
+
+headerContactsBurger.addEventListener('click', () => {
+
+    headerContacts.classList.toggle('burger_activ');
 });

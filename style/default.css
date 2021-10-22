@@ -63,6 +63,18 @@ section {
     padding: 30px 0;
 }
 
+.page__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    padding: 15px;
+    display: flex;
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 0 40px;

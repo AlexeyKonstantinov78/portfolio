@@ -155,5 +155,45 @@
             </div>
         </section>
     </main>
+    <div class="page__overlay">
+        <div class="modal">
+            <h2 class="modal-title">Заполните форму и я свяжусь с вами</h2> 
+            <form class="modal__form callback">
+                <label class="callback__label">
+                    <span class="callback__label-text">ФИО</span>
+                    <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+                </label>
+                <label class="callback__label">
+                    <span class="callback__label-text">Телефон</span>
+                    <input class="callback__input" type="text" name="phone" placeholder="Введите ваше номер телефона">
+                </label>
+
+                <fieldset class="callback__group connect">
+                    <legend class="connect__title">Где удобнее связаться?</legend>
+
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="telegram">
+                        <span class="connect__text">Телеграмм</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="whatsup">
+                        <span class="connect__text">Whatsup</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="call">
+                        <span class="connect__text">Позвонить</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="viber">
+                        <span class="connect__text">Viber</span>
+                    </label>
+
+                </fieldset>
+
+                <button class="callback__btn present__order-btn">Заказать</button>
+
+            </form>
+        </div>
+    </div>
 </body>
 </html>

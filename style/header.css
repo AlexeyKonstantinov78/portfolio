@@ -28,6 +28,15 @@
     color: #fff;
 }
 
+.burger_activ {
+    display: block;
+
+}
+
+.contacts__list {
+    /* height: ; */
+}
+
 .header__contacts-burger {
     display: block;
     width: 27px;
