@@ -87,10 +87,12 @@
     height: 26px;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.5s;
 }
 
 .contacts__social-link:hover {
-    fill: #f0cf89;
+    transform: scale(1.2);
+    filter: invert(100%) opacity(50%);
 }
 
 .contacts__social-link_whatsup {
