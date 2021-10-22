@@ -1,5 +1,8 @@
 const headerContactsBurger = document.querySelector('.header__contacts-burger'),
-    headerContacts = document.querySelector('.header__contacts');
+    headerContacts = document.querySelector('.header__contacts'),
+    presentOrderBtn = document.querySelector('.present__order-btn'),
+    modalCloss = document.querySelector('.modal__closs'),
+    pageOverlayModal = document.querySelector('.page__overlay_modal');
 
 
 new Swiper('.swiper', {
@@ -28,5 +31,14 @@ new Swiper('.swiper', {
 
 headerContactsBurger.addEventListener('click', () => {
 
-    headerContacts.classList.toggle('burger_activ');
+    headerContacts.classList.toggle('display__block');
+});
+
+presentOrderBtn.addEventListener('click', () => {
+    pageOverlayModal.classList.toggle('display__block');
+    pageOverlayModal.style.display = 'flex';
+});
+
+modalCloss.addEventListener('click', () => {
+    pageOverlayModal.classList.toggle('display__block');
 });
