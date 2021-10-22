@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Алексей Константинов - создание, продвижение сайтов</title>
     <meta name="description" content="Алексей Константинов - создание, продвижение сайтов">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style/index.css">    
 </head>
 <body class="page">
     <header class="page__header header">
         <div class="container header__container">
-            <img class="header__logo" src="img/logo.svg" alt="Логотип Алексей Константинов" class="logo">
+            <img class="header__logo logo" src="img/logo.svg" alt="Логотип Алексей Константинов">
 
             <address class="header__contacts contacts">
                 <ul class="contacts__list">
@@ -50,7 +50,12 @@
     <main class="main">
         <section class="present">
             <div class="container present__container">
-                <img src="img/foto.jpg" width="445" height="670" alt="Фотография Алексей Константинов" class="present__photo">
+                <picture class="present__photo">
+                    <source srcset="img/foto.avif" type="image/avif">
+                    <source srcset="img/foto.webp" type="image/webp">                    
+                    <img src="img/foto.jpg" width="445" height="670" alt="Фотография Алексей Константинов" >
+                </picture>
+                
                 <div class="present__content">
                     <hgroup class="present__group-title">
                         <h1 class="present__title">Алексей Константинов</h1>
@@ -83,10 +88,7 @@
                     <ul class="portfolio__list">
                         <li class="portfolio__item">
                             <article class="card">
-                                <div class="card__bg-mockup">
-                                    <img src="img/cinema.jpg" alt="" class="card__picture">
-                                </div>                              
-
+                                <img src="img/cinema.jpg" alt="" class="card__picture">
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
@@ -95,7 +97,7 @@
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
                         </li>
-                        <li class="portfolio__item">
+                        <!-- <li class="portfolio__item">
                             <article class="card">
                                 <img src="" alt="" class="card__picture">
 
@@ -142,8 +144,10 @@
 
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
-                        </li>
+                        </li> -->
                     </ul>
+                    <button class="portfolio__arrow portfolio__arrow_left"></button>
+                    <button class="portfolio__arrow portfolio__arrow_right"></button>                    
                 </div>
             </div>
         </section>
