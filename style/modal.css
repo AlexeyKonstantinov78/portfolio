@@ -1,4 +1,5 @@
 .modal {
+    position: relative;
     background: #FFFFFF;
     border: 1px solid #646464;
     border-radius: 14px;
@@ -67,10 +68,22 @@
 .callback__btn {
     display: block;
     margin: 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 16px 60px;
+    background-color: #E87C40;
+    border-radius: 4px;
+}
+
+.callback__btn:hover {
+    box-shadow: 5px 5px 40px 5px #ff9f6b;
 }
 
 .modal__closs {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 10px;
+    right: 10px;
 }

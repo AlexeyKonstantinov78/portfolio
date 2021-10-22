@@ -35,10 +35,10 @@ headerContactsBurger.addEventListener('click', () => {
 });
 
 presentOrderBtn.addEventListener('click', () => {
-    pageOverlayModal.classList.toggle('display__block');
-    pageOverlayModal.style.display = 'flex';
+
+    pageOverlayModal.classList.toggle('display__flex');
 });
 
 modalCloss.addEventListener('click', () => {
-    pageOverlayModal.classList.toggle('display__block');
+    pageOverlayModal.classList.toggle('display__flex');
 });
