@@ -45,6 +45,11 @@
     box-shadow: 5px 5px 40px 5px #ff9f6b;
 }
 
+.present__order-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
 
 @media (min-width: 480px) {
     .present__container {
